@@ -1,5 +1,10 @@
+@import "./blog-post.css";
+@import "./images.css";
+@import "./layout.css";
+
 :root {
     font: 100% monospace;
+    text-decoration: none;
 }
 
 body {
@@ -7,5 +12,7 @@ body {
     background-color: cadetblue;
 }
 a {
-    color: #fefefe;
+    color: yellow;
+    text-decoration: none;
+    font-size: 1.6em;
 }
