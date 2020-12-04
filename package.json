@@ -1,0 +1,20 @@
+{
+  "name": "b-blog",
+  "version": "1.0.0",
+  "description": "My first blog webpage",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/barbbasia/b-blog.git"
+  },
+  "author": "Barbara Pyper",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/barbbasia/b-blog/issues"
+  },
+  "homepage": "https://github.com/barbbasia/b-blog#readme"
+}
