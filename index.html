@@ -3,14 +3,52 @@
 <head>
     <title>title</title>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <!--    <meta name="viewport" content="width=device-width, user-scalable=yes, minimum-scale=1.0, maximum-scale=1.0">-->
+    <meta name="viewport" content="width=device-width">
     <link type="text/css" rel="stylesheet" href="src/main.css">
+    <link rel="stylesheet" href="../raycast-texture-colour/src/main.css">
 </head>
 <body>
 <div class="container">
-    <div class="header"><h1>A very interesting Blog</h1></h1></div>
-    <div class="sidebar"></div>
-    <div class="content"><a href="blog-post.html">Read More</a></div>
+
+    <div class="header">
+        <div id="logo"><a href="index.html"></a></div>
+    </div>
+
+    <div class="navbar">
+        <div class="place">Home</div>
+        <div class="place">Blog</div>
+        <div class="place">Contact</div>
+        <div class="place">About Us</div>
+    </div>
+    <div class="content">
+        <div class id="nestedGrid">
+            <div id="one" class="photoBox">
+                <p>
+                <h1>First Post</h1></p>
+                <p><h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h5></p>
+                <a href="blog-post.html">Read More</a>
+            </div>
+            <div id="two" class="photoBox">
+                <p>
+                <h1>Second Post</h1></p>
+                <p><h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h5></p>
+                <a href="blog-post.html">Read More</a>
+            </div>
+            <div id="three" class="photoBox">
+                <p>
+                <h1>Third Post</h1></p>
+                <p><h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h5></p>
+                <a href="blog-post.html">Read More</a>
+            </div>
+            <div id="four" class="photoBox">
+                <p>
+                <h1>Fourth Post</h1></p>
+                <p><h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h5></p>
+                <a href="blog-post.html">Read More</a>
+            </div>
+        </div>
+    </div>
     <div class="footer"></div>
 </div>
 </body>

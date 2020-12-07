@@ -1,0 +1,41 @@
+
+.photoBox {
+    padding: 0;
+    display: block;
+    margin: 0 auto;
+    /*background-size: cover;*/
+    width:100vw;
+    height:100vw;
+    background: darkslateblue;
+    background-repeat: no-repeat;
+    opacity: 0.5;
+}
+
+#logo {
+    padding: 0;
+    display: block;
+    margin: 0 auto;
+    background-size: contain;
+    width:100vw;
+    height:100px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-image: url('../maps/logo.png');
+}
+
+#one {
+    background-image: url('../maps/dots.jpg');
+    background-size: contain;
+}
+#two {
+    background-image: url('../maps/dots.jpg');
+    background-size: contain;
+}
+#three {
+    background-image: url('../maps/dots.jpg');
+    background-size: contain;
+}
+#four {
+    background-image: url('../maps/dots.jpg');
+    background-size: contain;
+}

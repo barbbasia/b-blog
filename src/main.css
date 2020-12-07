@@ -5,11 +5,13 @@
 :root {
     font: 100% monospace;
     text-decoration: none;
+    font-size: 20px;
 }
 
 body {
     color: #e6e6e6;
-    background-color: cadetblue;
+    background-color: #fefefe;
+    margin: 0;
 }
 a {
     color: yellow;
