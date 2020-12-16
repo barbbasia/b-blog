@@ -1,6 +1,8 @@
 @import "./blog-post.css";
 @import "./images.css";
 @import "./layout.css";
+@import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css";
+@import "./social.css";
 
 :root {
     font: 100% monospace;
