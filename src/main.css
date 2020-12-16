@@ -16,6 +16,28 @@ body {
     margin: 0;
 }
 
+h1 {
+    color: pink;
+    /*padding: 6px 0;*/
+    text-align: left;
+    /*color: #303030;*/
+    /*margin: 10px 10px 10px 10px;*/
+}
+
+h2 {
+    /*padding: 6px 0;*/
+    text-align: left;
+    color: #303030;
+    /*margin: 10px 10px 10px 10px;*/
+}
+
+h3, h4, h5, h6 {
+    /*padding: 6px 0;*/
+    text-align: left;
+    color: #303030;
+    /*margin: 10px 10px 10px 10px;*/
+}
+
 a {
     /*color: #fefefe;*/
     text-decoration: none;

@@ -9,29 +9,7 @@
     "main"
     "ft";
     width: 100vw;
-    /*border: 2px solid yellowgreen;*/
-}
-
-h1 {
-    color: pink;
-    /*padding: 6px 0;*/
-    text-align: left;
-    /*color: #303030;*/
-    /*margin: 10px 10px 10px 10px;*/
-}
-
-h2 {
-    /*padding: 6px 0;*/
-    text-align: left;
-    color: #303030;
-    /*margin: 10px 10px 10px 10px;*/
-}
-
-h3, h4, h5, h6 {
-    /*padding: 6px 0;*/
-    text-align: left;
-    color: #303030;
-    /*margin: 10px 10px 10px 10px;*/
+    border: 2px solid yellowgreen;
 }
 
 .header {
@@ -40,7 +18,6 @@ h3, h4, h5, h6 {
     justify-content: center;
     align-items: center;
     background-color: #b6356c;
-    /*border: 2px solid yellow;*/
 }
 
 .navbar {
@@ -49,50 +26,58 @@ h3, h4, h5, h6 {
     justify-content: space-evenly;
     align-items: center;
     height: 100px;
-    /*border: 2px solid brown;*/
     background-color: #b6356c;
 }
 
 .place {
     color: pink;
-    /*border: 2px solid pink;*/
 }
 
 .content {
     grid-area: main;
     height: auto;
     /*background-color: #6dacab;*/
-    /*border: 2px solid pink;*/
+    border: 2px solid pink;
 }
 
 #nestedGrid {
     display: grid;
     grid-template-columns: 100vw;
-    grid-template-rows: 100vw;
+    /*grid-template-rows: 100vw;*/
     /*grid-template-columns: 50% 50%;*/
     /*grid-template-rows: 50% 50%;*/
+}
+
+.card {
+    /*display: grid;*/
+    /*grid-template-columns: 100vw;*/
+    /*grid-template-rows: 100vw;*/
+    border: 2px solid yellowgreen;
+}
+
+.photoBox {
+    padding: 0;
+    display: block;
+    margin: 0 auto;
+    width: 100vw;
+    height: 100vw;
+    background: #e6e6e6;
+    background-repeat: no-repeat;
 }
 
 .textBox {
     padding: 10px 10px 10px 10px;
     margin: 10px 10px 10px 10px;
     font-size: 0.83em;
-    /*text-align: left;*/
     color: #303030;
     display: block;
     width: calc(100% - 40px);
-    height: 50vw;
-    opacity: 1;
-    quotes: "«" "»";
+    /*height: 50vw;*/
 }
 
 .readMore {
     text-decoration: none;
     font-weight: bold;
-    /*font-size: 0.83em;*/
-    /*padding: 6px 0;*/
-    /*text-align: left;*/
-    /*margin: 10px 10px 10px 10px;*/
     color: lightcoral;
 }
 
@@ -101,5 +86,37 @@ h3, h4, h5, h6 {
     grid-area: ft;
     background-color: #2b2b2b;
     height: 200px;
-    /*border: 2px solid darkslategray;*/
+}
+
+
+@media (min-width: 800px) {
+
+    #nestedGrid {
+        display: grid;
+        grid-template-columns: 50vw 50vw;
+        grid-template-rows: auto auto;
+        gap:10px;
+    }
+
+    .card {
+        grid-template-columns: 50vw;
+        grid-template-rows: 50vw;
+        /*grid-template-columns: 50% 50%;*/
+        /*grid-template-rows: 50% 50%;*/
+    }
+
+    .photoBox {
+        /*padding: 0;*/
+        /*display: block;*/
+        /*margin: 0 auto;*/
+        width: calc((100vw - 10px) / 2);
+        height: calc((100vw - 10px) / 2);
+    }
+
+    .textBox {
+        padding: 10px 10px 10px 10px;
+        margin: 10px 10px 10px 10px;
+        width: calc((100% - 40px) / 2);
+        /*height: 50vw;*/
+    }
 }
