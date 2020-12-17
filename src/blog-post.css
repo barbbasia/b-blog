@@ -1,5 +1,5 @@
 
-#nestedGridBlog {
+#nested-grid-blog {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
@@ -8,20 +8,21 @@
     "b-text";
 }
 
-.photoBoxBlog {
+.photo-box-blog {
     grid-area: b-text;
     z-index: -1;
     padding: 0;
     display: block;
     margin: 0 auto;
+    margin-top: 10px;
     width: 90vw;
     max-width: 500px;
     max-height: 500px;
     background-repeat: no-repeat;
-    opacity: 0.5;
+    opacity: 0.4;
 }
 
-.blogText {
+.blog-text {
     grid-area: b-text;
     padding: 10px 10px 10px 10px;
     margin: 10px 10px 10px 10px;
@@ -33,7 +34,7 @@
     quotes: "«" "»";
 }
 
-.authorContainer {
+.author-container {
     display: grid;
     grid-template-columns: 1fr;
     justify-content: center;
@@ -43,10 +44,9 @@
     "social";
     color: #303030;
     width: 100%;
-    /*border: 2px solid yellow;*/
 }
 
-.authorFace {
+.author-face {
     grid-area: avatar;
     padding: 0;
     margin: 0 auto;
@@ -58,20 +58,19 @@
     background-position: center center;
 }
 
-.authorContent {
+.author-content {
     grid-area: bio;
     padding-right: 10px;
     margin-right: 10px;
-    /*border: 2px solid yellow;*/
 }
 
-.authorList {
+.author-list {
     color: #303030;
     font-size: 0.83em;
     list-style-type: none;
 }
 
-.authorSocial {
+.author-social {
     grid-area: social;
     padding: 10px 10px 10px 10px;
     margin: 10px 10px 10px 10px;
@@ -81,17 +80,16 @@
     height: 50px;
 }
 
-.bottomNavbar {
+.bottom-navbar {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     height: 100px;
     width: 100vw;
-    /*border: 2px solid yellow;*/
 }
 
 @media (min-width: 800px) {
-    .authorContainer {
+    .author-container {
         grid-template-columns: 300px 1fr;
         grid-template-rows: 100px auto;
         grid-template-areas:
@@ -99,16 +97,16 @@
         "avatar social";
     }
 
-    .authorContent {
+    .author-content {
         padding-right: 20px;
         margin-right: 20px;
     }
 
-    .authorSocial {
+    .author-social {
         width: 400px;
     }
 
-    .blogText {
+    .blog-text {
         padding: 20px 20px 20px 20px;
         margin: 20px 20px 20px 20px;
         width: calc(100vw - 80px);
@@ -116,53 +114,22 @@
 }
 
 @media (min-width: 1140px) {
-    #nestedGridBlog {
+    #nested-grid-blog {
         width: 1140px;
         margin-left: calc((100vw - 1140px) / 2);
     }
 
-    .blogText {
+    .blog-text {
         width: 1140px;
     }
 
-    .authorContainer {
+    .author-container {
         width: 1140px;
         margin-left: calc((100vw - 1140px) / 2);
     }
 
-    .bottomNavbar {
+    .bottom-navbar {
         width: 1140px;
         margin-left: calc((100vw - 1140px) / 2);
     }
 }
-
-/*@media (min-width: 1920px) {*/
-/*    .authorContainer {*/
-/*        grid-template-columns: 400px calc(100% - 400px);*/
-/*        grid-template-rows: 150px auto;*/
-/*        grid-template-areas:*/
-/*        "avatar bio"*/
-/*        "avatar social";*/
-/*    }*/
-
-/*    .authorSocial {*/
-/*        width: 400px;*/
-/*    }*/
-
-/*    #nestedGridBlog {*/
-/*        grid-template-columns: 600px calc(100% - 600px);*/
-/*        grid-template-areas:*/
-/*        "b-img b-text";*/
-/*    }*/
-
-/*    .blogText {*/
-/*        grid-area: 1 / 2 / 2 / 2;*/
-/*        padding: 20px 20px 20px 20px;*/
-/*        margin: 20px 20px 20px 20px;*/
-/*        width: calc(100vw - 600px - 160px);*/
-/*    }*/
-
-/*    .photoBoxBlog {*/
-/*        grid-area: b-img;*/
-/*    }*/
-/*}*/
