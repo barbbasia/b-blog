@@ -2,7 +2,7 @@
 
 Content to follow
 
-![project preview](https://github.com/barbbasia/b-blog/blob/master/preview.jpg?raw=true)
+![project preview](https://github.com/barbbasia/b-blog/blob/master/info/preview.jpg?raw=true)
 
 ## Getting Started
 
