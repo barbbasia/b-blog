@@ -9,7 +9,7 @@
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center center;
-    background-image: url('../maps/logo.png');
+    background-image: url("../maps/logo.png");
 }
 
 .photoBox:hover {
@@ -17,24 +17,28 @@
 }
 
 #one {
-    background-image: url('../maps/06.png');
+    background-image: url("../maps/06.png");
     background-size: contain;
 }
 
 #two {
-    background-image: url('../maps/02.png');
+    background-image: url("../maps/02.png");
     background-size: contain;
 }
 
 #three {
-    background-image: url('../maps/05.png');
+    background-image: url("../maps/05.png");
     background-size: contain;
 }
 
 #four {
-    background-image: url('../maps/16.png');
+    background-image: url("../maps/16.png");
     background-size: contain;
 }
 #avatar{
-    background-image: url('../maps/face.png');
+    background-image: url("../maps/face.png");
+}
+
+#about-us-img {
+    opacity:1;
 }
