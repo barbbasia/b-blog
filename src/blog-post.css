@@ -1,7 +1,7 @@
 
 #nestedGridBlog {
     display: grid;
-    grid-template-columns: 100vw;
+    grid-template-columns: 1fr;
     grid-template-rows: auto;
     justify-content: center;
     grid-template-areas:
@@ -9,7 +9,6 @@
 }
 
 .photoBoxBlog {
-    /*grid-area: 1 / 1 / 2 / 2;*/
     grid-area: b-text;
     z-index: -1;
     padding: 0;
@@ -23,28 +22,27 @@
 }
 
 .blogText {
-    /*grid-area: 1 / 1 / 2 / 2;*/
     grid-area: b-text;
     padding: 10px 10px 10px 10px;
     margin: 10px 10px 10px 10px;
     font-size: 0.83em;
     color: #303030;
     display: block;
-    width: calc(100vw - 80px);
+    width: calc(100% - 40px);
     height: auto;
     quotes: "«" "»";
 }
 
 .authorContainer {
     display: grid;
-    grid-template-columns: 100%;
-    /*grid-template-rows: 200px auto 40px;*/
+    grid-template-columns: 1fr;
     justify-content: center;
     grid-template-areas:
     "avatar"
     "bio"
     "social";
     color: #303030;
+    width: 100%;
     /*border: 2px solid yellow;*/
 }
 
@@ -58,13 +56,12 @@
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center center;
-    /*border: 2px solid red;*/
 }
 
 .authorContent {
-    /*padding: 10px 10px 10px 10px;*/
-    /*margin: 10px 10px 10px 10px;*/
     grid-area: bio;
+    padding-right: 10px;
+    margin-right: 10px;
     /*border: 2px solid yellow;*/
 }
 
@@ -82,9 +79,6 @@
     justify-content: space-evenly;
     align-items: center;
     height: 50px;
-    /*width: 100vw;*/
-    /*max-width: 400px;*/
-    /*border: 2px solid yellow;*/
 }
 
 .bottomNavbar {
@@ -92,15 +86,22 @@
     justify-content: space-evenly;
     align-items: center;
     height: 100px;
+    width: 100vw;
+    /*border: 2px solid yellow;*/
 }
 
 @media (min-width: 800px) {
     .authorContainer {
-        grid-template-columns: 400px calc(100% - 400px);
-        grid-template-rows: 150px auto;
+        grid-template-columns: 300px 1fr;
+        grid-template-rows: 100px auto;
         grid-template-areas:
         "avatar bio"
         "avatar social";
+    }
+
+    .authorContent {
+        padding-right: 20px;
+        margin-right: 20px;
     }
 
     .authorSocial {
@@ -110,37 +111,58 @@
     .blogText {
         padding: 20px 20px 20px 20px;
         margin: 20px 20px 20px 20px;
-        width: calc(100vw - 160px);
+        width: calc(100vw - 80px);
     }
 }
 
-@media (min-width: 1920px) {
-    .authorContainer {
-        grid-template-columns: 400px calc(100% - 400px);
-        grid-template-rows: 150px auto;
-        grid-template-areas:
-        "avatar bio"
-        "avatar social";
-    }
-
-    .authorSocial {
-        width: 400px;
-    }
-
+@media (min-width: 1140px) {
     #nestedGridBlog {
-        grid-template-columns: 600px calc(100% - 600px);
-        grid-template-areas:
-        "b-img b-text";
+        width: 1140px;
+        margin-left: calc((100vw - 1140px) / 2);
     }
 
     .blogText {
-        grid-area: 1 / 2 / 2 / 2;
-        padding: 20px 20px 20px 20px;
-        margin: 20px 20px 20px 20px;
-        width: calc(100vw - 600px - 160px);
+        width: 1140px;
     }
 
-    .photoBoxBlog {
-        grid-area: b-img;
+    .authorContainer {
+        width: 1140px;
+        margin-left: calc((100vw - 1140px) / 2);
+    }
+
+    .bottomNavbar {
+        width: 1140px;
+        margin-left: calc((100vw - 1140px) / 2);
     }
 }
+
+/*@media (min-width: 1920px) {*/
+/*    .authorContainer {*/
+/*        grid-template-columns: 400px calc(100% - 400px);*/
+/*        grid-template-rows: 150px auto;*/
+/*        grid-template-areas:*/
+/*        "avatar bio"*/
+/*        "avatar social";*/
+/*    }*/
+
+/*    .authorSocial {*/
+/*        width: 400px;*/
+/*    }*/
+
+/*    #nestedGridBlog {*/
+/*        grid-template-columns: 600px calc(100% - 600px);*/
+/*        grid-template-areas:*/
+/*        "b-img b-text";*/
+/*    }*/
+
+/*    .blogText {*/
+/*        grid-area: 1 / 2 / 2 / 2;*/
+/*        padding: 20px 20px 20px 20px;*/
+/*        margin: 20px 20px 20px 20px;*/
+/*        width: calc(100vw - 600px - 160px);*/
+/*    }*/
+
+/*    .photoBoxBlog {*/
+/*        grid-area: b-img;*/
+/*    }*/
+/*}*/
